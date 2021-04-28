@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content ="Vishal Babburi">
+    <title>vishal's page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <script src='JS2.js'>
+    </script>
+    <noscript>your browser does not support Javascript!</noscript>
+</head>
+<body>
+    <div class='head_div'>
+    <header>
+    <figure>
+        <img src="vishal2.jpg" alt="my_picture">
+        <figcaption></figcaption>
+    </figure>
+    </div>
+    <div class='webcaption'>
+        <p class="divisionHeading" id='#about'>Welcome to world of vishal</p>
+        <ul>
+            <li>Name:Sai Vishal Babburi</li>
+            <li>DOB:05/17/1998</li>
+            <li>Education:Graduate Student,Computer Science,SIUC</li>
+            <li>Avocations:travelling, reading books, Music</li>
+            <li>Favourite book:"Rich dad Poor dad"</li>
+        </ul>
+         
+    </div>
+    <hr>
+</header>
+    <div class='quotediv'>
+    <blockquote cite="https://www.inc.com/jayson-demers/51-quotes-to-inspire-success-in-your-life-and-business.html">
+       <q>Would you like me to give you a formula for success? It's quite simple, really: Double your rate of failure.
+            You are thinking of failure as the enemy of success. But it isn't at all. 
+            You can be discouraged by failure or you can learn from it, so go ahead and make mistakes. 
+             Make all you can. Because remember that's where you will find success.</q>
+    </blockquote>
+    </div>
+    <hr>  
+        
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="travelblog.html">Travelblog</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="funpage.html">Games & Music</a>
+      </div>
+    <hr>
+    <button type="button" class="popFormbtn" onclick="popupform()">Feedback form</button>
+    <div class="formdiv" id="myform">     <!*************************form starts here*********>
+        <form class="formclass" method="POST" action="/">
+            Name:<input type='text' name='id' id='name' placeholder="Enter your name"  autofocus><br><br>
+            Email:<input type="text" name='email' id="emailadd" placeholder="example@.com" ><br><br>
+            Phone:<input type="text"name='phone' id='contact' placeholder="your 10digit contact number"><br><br>
+            <textarea name='feedback'id='comments' rows='9' cols='20' placeholder="please enter your feedback here"></textarea><br><br>
+            <button type="submit" class='submitbtn' onclick="return formsubmit(this.form)">submit</button><br><br>
+            <button type='button' class='closebtn'onclick="close1()">close</button>
+
+        </form>
+    </div>
+    <div class='lastdiv'> 
+        <div class='penultimate' style="height: 100px;">
+
+        </div>
+    <footer>         <!footer starts here>
+       <address> For any queries <a href="mailto:saivishalgoud.babburi@siu.edu" target="_blank" >Email</a> to:saivishalgoud.babburi@siu.edu </address>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content ="Vishal Babburi">
+    <title>vishal's page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <script src='JS2.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <noscript>your browser does not support Javascript!</noscript>
+</head>
+<body>
+    <!############################    GAME STARTS HERE ###########################>
+    <p class='divisionHeading' id=''>shape changing game</p>
+    <p  style='text-align: center;'>
+        <button type="button" class="btn btn-danger btn-sm" style='font-size: xx-large; font-family: fantasy;'onclick="playpressed()">
+            <span class="glyphicon glyphicon-play"></span> Play game player1
+          </button>
+    </p>
+    <canvas id='canvas' class='canvas' width='1500' height='500' onclick="getcoords(event)">Sorry_This page usese canvas and your browser does not support it</canvas>
+    <p id='gamep' >The player's turn is done if you click on more than 5 arbitary points inside the canvas</p>
+    <p  style='text-align: center;'>
+        <button type="button" class="btn btn-danger btn-sm" style='font-size: xx-large; font-family: fantasy;'onclick="playpressed2()">
+            <span class="glyphicon glyphicon-play"></span> Play game player2
+          </button>
+    </p>
+    <!###############player2########>
+    <canvas id='canvas2' class='canvas'width='1500' height='500' onclick="getcoords2(event)">Sorry_This page usese canvas and your browser does not support it</canvas>
+
+
+    <p  style='text-align: center;'><!+++++++++++++++++++++ button to view result++++++++++++++>
+        <button type="button" id='resultbtn'class="btn btn-success btn-sm" style='font-size: x-large; font-family: fantasy;display:none;margin-left: auto; margin-right: auto;'onclick="viewresult()">
+            <span class="glyphicon glyphicon-thumbs-up"></span> view result
+          </button>
+    </p>
+    <div>
+    <p id='resultdisplay1' class='gamep1' >player 1 has won the Game</p>
+    <p id='resultdisplay2' class='gamep1' >player 2 has won the Game</p>
+    <p id='resultdisplaytie' class='gamep1'>There is a tie between both the players</p>
+    </div>
+    <div class='instructions'>
+    <p><strong>Instructions and rules: </strong>It is a dual player game.Player with more number of SQUARES after transformations win the game</p>
+    <p>Each player is allowed only to click on <strong>5 arbitary points</strong> and should wait until all transformations are completed.</p>
+    <p>If a player clicks on <strong>SIXTH arbitary point INSIDE his canvas box</strong>,His score is recorded and canvas is closed.</p>
+    <p>After player1 and player 2 completed their game. You can view result by clicking on result button.</p>
+    <p>Please maintain significant distance between your clicks inside canvas for better experience and also to avoid overlapping. </p>
+    </div>
+    <hr>
+    <div class='media' id=''>     <! audios  and videos start here***************************************************************************>
+        <p class='divisionHeading' id=''>My picks to listen and watch</p>
+        <h1 style="font-family: cursive;"><i><u>Melodies:</i></u></h1>
+        
+        <audio autoplay controls>
+            <source src="senorita.mp3" type='audio/mpeg'>
+        </audio>
+        <audio autoplay controls>
+            <source src="dejavu.mp3" type='audio/mpeg'>
+        </audio>
+        <br><br>
+        <h1 style="font-family: cursive;"><i><u>Tech videos:</i></u></h1>
+        <video width='400' height="250" preload='metadata' controls poster="techpic1.jpg">
+            <source src="techvideo1.mp4" type="video/mp4">
+            <source src="techvideo2.mp4" type="video/mp4">
+        </video><br><br><br>
+        <video width='400' height="250" preload='metadata' controls poster="techpic2.jpg">
+            <source src="techvideo2.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+</body>

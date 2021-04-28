@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-image: url(travelbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section > p{
+    font-size:xx-large;
+    font-family:"Andika";
+}
+.table{
+    display:table;
+    border-spacing:20px;
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.caption{
+    display:table-caption;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: large;
+    font-weight: bolder;
+    font-family: "Sofia";
+}
+.row{
+    display:table-row;
+}
+.row *{
+    display:table-cell;
+    text-align: center;
+    font-size: large ;
+    font-family: "Sofia";
+}
+img{
+    width: 250px;
+    height: 250px;
+}
